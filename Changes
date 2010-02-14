@@ -1,5 +1,8 @@
 Revision history for Perl extension JiftyX::Markapl
 
+0.03
+- Fix the include_(javascript|css)
+
 0.02
 - Depends on Markapl 0.10
 

@@ -9,6 +9,12 @@ sub new {
     my $template_class = Jifty->config->framework("TemplateClass");
 
     Jifty->handler->buffer( Markapl->buffer );
+    {
+        my $buffer = Jifty->handler->buffer;
+        no warnings 'redefine';
+        *Jifty::Web::out = sub {shift;unshift @_,$buffer;goto \&String::BufferStack::append};
+    }
+
     return $self;
 }
 
