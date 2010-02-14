@@ -23,6 +23,12 @@ MANIFEST			This list of files
 META.yml
 README
 t/00_compile.t
+t/TestSimple/bin/jifty
+t/TestSimple/etc/config.yml
+t/TestSimple/lib/TestSimple/View.pm
+t/TestSimple/Makefile.PL
+t/TestSimple/t/request-with-region.t
+t/TestSimple/t/requests.t
 xt/01_podspell.t
 xt/02_perlcritic.t
 xt/03_pod.t

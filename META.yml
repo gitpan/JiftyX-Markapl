@@ -20,6 +20,9 @@ no_index:
     - inc
     - t
     - xt
+requires:
+  Jifty: 0.9
+  Markapl: 0.09
 resources:
   license: http://opensource.org/licenses/mit-license.php
-version: 0.01
+version: 0.02

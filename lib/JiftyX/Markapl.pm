@@ -2,7 +2,7 @@ package JiftyX::Markapl;
 
 use strict;
 use warnings;
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 1;
 __END__
@@ -45,7 +45,7 @@ Then, edit your C<MyApp/View.pm>:
 
 Then you should be able to visit "/' and see the hello.
 
-For a fully working example, see example/Oreo dir.
+For a fully working example, see example/Oreo directory.
 
 =head1 AUTHOR
 

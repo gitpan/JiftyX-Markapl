@@ -1,4 +1,7 @@
 Revision history for Perl extension JiftyX::Markapl
 
+0.02
+- Depends on Markapl 0.10
+
 0.01    Sat Aug 22 18:09:00 2009
         - original version

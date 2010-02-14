@@ -8,15 +8,7 @@ sub new {
     bless $self,$class;
     my $template_class = Jifty->config->framework("TemplateClass");
 
-    {
-        no warnings 'redefine';
-        *Jifty::Web::out = sub {
-            shift;
-            my $str = shift;
-            $template_class->can("outs_raw")->($str);
-        };
-    }
-
+    Jifty->handler->buffer( Markapl->buffer );
     return $self;
 }
 
@@ -25,9 +17,8 @@ sub show {
     my $template = shift;
     my $template_class = Jifty->config->framework("TemplateClass");
 
+    $template_class->render($template);
     Jifty->handler->buffer->clear;
-    my $out = $template_class->render($template);
-    Jifty->handler->buffer->append($out);
     return '';
 }
 
